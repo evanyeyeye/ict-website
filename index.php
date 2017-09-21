@@ -46,18 +46,12 @@
     </section>
     <section class="section">
       <div class="container">
-        <table class="table">
-          <tbody>
 <?php
 $data = json_decode(file_get_contents("programming.json"));
 foreach ($data as $key => $value) {
-  echo '<tr>';
-  echo '<td><a href="lectures/programming/' . $value . '">' . $key . '<\a><\td>';
-  echo '<\tr>';
+  echo '<div class="notification"><a href="lectures/programming/' . $value . '">' . $key . '</a></div>';
 }
 ?>
-          </tbody>
-        </table>
       </div>
     </section>
   </body>
