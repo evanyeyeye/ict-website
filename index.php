@@ -38,7 +38,6 @@
               <li class="is-active"><a>Programming</a></li>
               <li><a>ACSL</a></li>
               <li><a>Contests</a></li>
-              <li><a>Reference</a></li>
             </ul>
           </div>
         </nav>
