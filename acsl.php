@@ -10,7 +10,7 @@ if (!class_exists('Template')) {
 
 <?php
 
-$data = json_decode(file_get_contents("lectures/lectures.json"))["ACSL"];
+$data = json_decode(file_get_contents("lectures/lectures.json"), true)["ACSL"];
 foreach ($data as $key => $value) {
   echo '<div class="notification"><a href="lectures/acsl/' . $value . '">' . $key . '</a></div>';
 }
