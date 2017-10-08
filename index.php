@@ -1,3 +1,12 @@
+<?php
+
+if (!class_exists('Template')) {
+    require_once 'template.php';
+    $w = new Template('Programming');
+    $w->render();
+}
+
+?>
 
 <?php
 
