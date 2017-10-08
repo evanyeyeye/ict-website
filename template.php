@@ -12,13 +12,26 @@ class Template {
     public function __construct($title) {
         $this->title = $title;
     }
+    private function generate_nav() {
+        $header_array = ["Programming", "ACSL", "Contests"];
+        $list = "";
+        foreach ($header_array as $header) {
+            if ($this->title === $header) {
+                $list .= "<li class="is-active"><a>{$header}</a></li>\n";
+            } else {
+                $list .= "<li><a>{$header}</a></li>\n";
+            }
+        }
+        return $list;
+    } 
     private function require_to_var($file) {
         ob_start();
         require($file);
         return ob_get_clean();
     }
     public function render() {
-        $block = $this->require_to_var(basename($_SERVER["SCRIPT_FILENAME"]));
+        $block_nav = $this->generate_nav();
+        $block_content = $this->require_to_var(basename($_SERVER["SCRIPT_FILENAME"]));
         echo <<<TEMPLATE
 <!DOCTYPE html>
 <html>
@@ -57,9 +70,7 @@ class Template {
                 <nav class="tabs is-boxed">
                     <div class="container">
                         <ul>
-                            <li class="is-active"><a>Programming</a></li>
-                            <li><a>ACSL</a></li>
-                            <li><a>Contests</a></li>
+                            {$block_nav}
                         </ul>
                     </div>
                 </nav>
@@ -67,7 +78,7 @@ class Template {
         </section>
         <section class="section">
             <div class="container">
-                {$block}
+                {$block_content}
             </div>
         </section>
     </body>
