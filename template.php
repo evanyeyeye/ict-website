@@ -3,7 +3,7 @@
 // Thanks SCT!
 
 if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
-    header("Location: https://www.bigparser.com/");
+    header("Location: http://www.bigparser.com/");
     die();
 }
 
