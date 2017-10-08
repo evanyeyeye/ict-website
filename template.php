@@ -16,10 +16,11 @@ class Template {
         $header_array = ["Programming", "ACSL", "Contests"];
         $list = "";
         foreach ($header_array as $header) {
+            $header_lower = strtolower($header);
             if ($this->title === $header) {
-                $list .= "<li class=\"is-active\"><a>{$header}</a></li>\n";
+                $list .= "<li class=\"is-active\"><a href=\"{$header_lower}.php\">{$header}</a></li>\n";
             } else {
-                $list .= "<li><a>{$header}</a></li>\n";
+                $list .= "<li><a href=\"{$header_lower}.php\">{$header}</a></li>\n";
             }
         }
         return $list;
