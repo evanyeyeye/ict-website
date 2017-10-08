@@ -17,7 +17,7 @@ class Template {
         $list = "";
         foreach ($header_array as $header) {
             if ($this->title === $header) {
-                $list .= "<li class="is-active"><a>{$header}</a></li>\n";
+                $list .= "<li class=\"is-active\"><a>{$header}</a></li>\n";
             } else {
                 $list .= "<li><a>{$header}</a></li>\n";
             }
