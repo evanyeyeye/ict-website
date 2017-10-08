@@ -10,7 +10,7 @@ if (!class_exists('Template')) {
 
 <?php
 
-$data = json_decode(file_get_contents("programming.json"));
+$data = json_decode(file_get_contents("lectures/lectures.json"))["Programming"];
 foreach ($data as $key => $value) {
   echo '<div class="notification"><a href="lectures/programming/' . $value . '">' . $key . '</a></div>';
 }
