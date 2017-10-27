@@ -3,10 +3,12 @@
 		"ICT Orientation": "ICT_Orientation.pdf",
 		"Computational Complexity": "Computational_Complexity.pdf",
 		"Complete Search": "Complete_Search.pdf",
-		"Linear Data Structures": "Linear_DS.pdf"
+		"Linear Data Structures": "Linear_DS.pdf",
+		"Binary Search": "Binary_Search.pdf"
 	},
 	"ACSL": {
 		"Recursion": "Recursion.pdf",
-		"Recursion Problems": "Recursion_Problems.pdf"
+		"Recursion Problems": "Recursion_Problems.pdf",
+		"Computer Number Systems": "Computer_Number_Systems"
 	}
 }
