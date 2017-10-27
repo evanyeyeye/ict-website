@@ -9,7 +9,7 @@ if (!class_exists('Template')) {
 ?>
 
 <div class="notification">
-    <a href="contest1.zip">In-House Contest 1</a>
+    <a href="contest1.zip">In-House Contest 1 (with solutions)</a>
 </div>
 
 <?php
