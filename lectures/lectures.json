@@ -4,11 +4,12 @@
 		"Computational Complexity": "Computational_Complexity.pdf",
 		"Complete Search": "Complete_Search.pdf",
 		"Linear Data Structures": "Linear_DS.pdf",
-		"Binary Search": "Binary_Search.pdf"
+		"Binary Search": "Binary_Search.pdf",
+		"Binary Data Structures": "Binary_Data_Structures.pdf"
 	},
 	"ACSL": {
 		"Recursion": "Recursion.pdf",
 		"Recursion Problems": "Recursion_Problems.pdf",
-		"Computer Number Systems": "Computer_Number_Systems"
+		"Computer Number Systems": "Computer_Number_Systems.pdf"
 	}
 }
