@@ -16,6 +16,10 @@ if (!class_exists('Template')) {
     <a href="contests/acsl1.zip">ACSL Contest 1 Practice</a>    
 </div>
 
+<div class="notification">
+    <a href="contests/acsl3.pdf">ACSL Contest 3 Practice</a>    
+</div>
+
 <?php
 
 date_default_timezone_set('America/New_York');
